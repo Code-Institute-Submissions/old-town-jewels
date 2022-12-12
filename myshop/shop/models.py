@@ -3,15 +3,14 @@ from django.db import models
 # Category model
 
 class Category(models.Model):
-    name = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200,
+    name = models.CharField(max_length=250, help_text="Category name")
+    slug = models.SlugField(max_length=250,
                             unique=True)
     class Meta:
         ordering = ['name']
         indexes = [
             models.Index(fields=['name']),
         ]
-        verbose_name = 'category'
         verbose_name_plural = 'categories'
     def __str__(self):
         return self.name
@@ -22,8 +21,8 @@ class Product(models.Model):
     category = models.ForeignKey(Category,
                                  related_name='products',
                                  on_delete=models.CASCADE)
-    name = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200)
+    name = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=250)
     image = models.ImageField(upload_to='products/%Y/%m/%d',
                               blank=True)
     description = models.TextField(blank=True)
@@ -40,6 +39,8 @@ class Product(models.Model):
             models.Index(fields=['name']),
             models.Index(fields=['-created']),
         ]
-        def __str__(self):
-            return self.name
+        verbose_name_plural = 'Products'
+
+    def __str__(self):
+        return self.name
 
