@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bootstrap',
     'fontawesome',
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
 ]
 
 MIDDLEWARE = [
