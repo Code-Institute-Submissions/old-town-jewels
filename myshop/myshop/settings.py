@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 CART_SESSION_ID = 'cart'
+CELERY_BROKER_URL = "redis://6379-marosan28-oldtownjewels-4nc6oznovzz.ws-eu78.gitpod.io"
+CELERY_RESULT_BACKEND = "redis://6379-marosan28-oldtownjewels-4nc6oznovzz.ws-eu78.gitpod.io"
+
