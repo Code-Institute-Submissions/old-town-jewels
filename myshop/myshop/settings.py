@@ -42,8 +42,6 @@ INSTALLED_APPS = [
     'fontawesome',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
-    'django_celery_results',
-    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
