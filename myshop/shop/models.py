@@ -1,6 +1,9 @@
 from django.db import models
 from django.urls import reverse
 
+class AdditionResult(models.Model):
+    answer = models.IntegerField(default=0)
+
 # Category model
 
 class Category(models.Model):
