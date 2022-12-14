@@ -23,7 +23,7 @@ def payment_process(request):
             'cancel_url': cancel_url,
             'line_items': []
         }
-        
+
         for item in order.items.all():
             session_data['line_items'].append({
                 'price_data': {
@@ -40,3 +40,8 @@ def payment_process(request):
         return redirect(session.url, code=303)
     else:
         return render(request, 'payment/process.html', locals())
+
+def payment_completed(request):
+    return render(request, 'payment/completed.html')
+def payment_canceled(request):
+    return render(request, 'payment/canceled.html')
