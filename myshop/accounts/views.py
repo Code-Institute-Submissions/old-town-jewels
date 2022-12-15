@@ -4,7 +4,6 @@ from django.contrib.auth.models import User, auth
 
 
 def register(request):
-
     if request.method == 'POST':
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
@@ -27,9 +26,11 @@ def register(request):
                 user.save()
                 print("user created")
         else:
-            print("password not matching")
-            return redirect('register')
-        return redirect(' / ')
+            if User.objects.filter(username = request.GET.get('username')).exists() or User.objects.filter(email = request.GET.get('email')).exists():
+            messages.info("password not matching")
 
-    else:
-        return render(request, 'register.html')
+            else:
+                context = {
+                'request':request,
+                }
+        return render(request, 'register.html', context)
