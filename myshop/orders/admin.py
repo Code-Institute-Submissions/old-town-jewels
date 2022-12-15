@@ -5,7 +5,7 @@ from .models import Order, OrderItem
 from django.utils.safestring import mark_safe
 from django.http import HttpResponse
 from django.urls import reverse
-
+from .apps import order_pdf
 
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
