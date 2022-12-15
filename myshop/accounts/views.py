@@ -49,8 +49,14 @@ def register(request):
         }
         return render(request, 'register.html', context)
 
-        
+
 def login(request):
     # Import and call the login function
     from login.views import login
     return login(request)
+
+def logout(request):
+    request.session.flush()
+    # Redirect the user to the login page
+    return redirect('login')
+    
