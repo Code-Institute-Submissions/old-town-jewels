@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from django.core.mail import send_mail
 from login.views import login
+from django.http import HttpResponseRedirect
 
 
 def register(request):
@@ -58,5 +59,5 @@ def login(request):
 def logout(request):
     request.session.flush()
     # Redirect the user to the login page
-    return redirect('login')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     
