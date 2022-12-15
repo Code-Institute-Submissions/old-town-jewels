@@ -231,3 +231,15 @@ form div.field {
     color:#666;
     border-radius:4px;
 }
+
+/* Log in */
+.log-in {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin: 20px 0 30px;
+    left: 40%;
+}

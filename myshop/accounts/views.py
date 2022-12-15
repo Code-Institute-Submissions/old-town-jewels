@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from django.core.mail import send_mail
+from login.views import login
 
 
 def register(request):
     if request.method == 'POST':
+        #Register form
         first_name = request.POST['first_name']
         last_name = request.POST['last_name']
         username = request.POST['username']
@@ -32,7 +34,6 @@ def register(request):
                 from_email = "admin@oldtownjewels.com"
                 recipient_list = [email]
                 send_mail(subject, message, from_email, recipient_list)
-                print(send_mail)
 
                 messages.add_message(request, messages.SUCCESS, "User created successfully")
         else:
@@ -47,3 +48,9 @@ def register(request):
             'request':request,
         }
         return render(request, 'register.html', context)
+
+        
+def login(request):
+    # Import and call the login function
+    from login.views import login
+    return login(request)
