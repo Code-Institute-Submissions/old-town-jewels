@@ -4,14 +4,13 @@
   Your shopping cart
 {% endblock %}
 {% block content %}
-  <h1>Your shopping cart</h1>
+  <h1 class="cart">Your shopping cart</h1>
   <table class="cart">
     <thead>
       <tr>
-        <th>Image</th>
+        <th class="img">Image</th>
         <th>Product</th>
         <th>Quantity</th>
-        <th>Remove</th>
         <th>Unit price</th>
         <th>Price</th>
       </tr>
@@ -20,7 +19,7 @@
       {% for item in cart %}
         {% with product=item.product %}
           <tr>
-            <td>
+            <td class="product-img">
               <a href="{{ product.get_absolute_url }}">
                 <img src="{% if product.image %}{{ product.image.url }}
                 {% else %}{% static 'images/no-img.png' %}{% endif %}">
@@ -36,7 +35,7 @@
               </form>
             </td>
             <form action="{% url 'cart:cart_remove' product.id %}" method="post">
-                <input type="submit" value="Remove">
+                <input class="remove" type="submit" value="Remove">
                 {% csrf_token %}
               </form>
             </td>
@@ -46,7 +45,7 @@
         {% endwith %}
       {% endfor %}
       <tr class="total">
-        <td>Total</td>
+        <td class="img">Total</td>
         <td colspan="4"></td>
         <td class="num">${{ cart.get_total_price }}</td>
       </tr>
