@@ -26,11 +26,14 @@ def register(request):
                 user.save()
                 print("user created")
         else:
-            if User.objects.filter(username = request.GET.get('username')).exists() or User.objects.filter(email = request.GET.get('email')).exists():
-            messages.info("password not matching")
+            print("password not matching")
+            return redirect('register')
+        return redirect('/')
 
-            else:
-                context = {
-                'request':request,
-                }
+    else:
+        if User.objects.filter(username = request.GET.get('username')).exists() or User.objects.filter(email = request.GET.get('email')).exists():
+            messages.info(request, "Username or Email Taken")
+        context = {
+            'request':request,
+        }
         return render(request, 'register.html', context)
