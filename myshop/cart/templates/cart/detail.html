@@ -4,6 +4,7 @@
   Your shopping cart
 {% endblock %}
 {% block content %}
+{% if user.is_authenticated %}
   <h1 class="cart">Your shopping cart</h1>
   <table class="cart">
     <thead>
@@ -59,4 +60,5 @@
     light">Continue shopping</a>
     <a href="{% url 'orders:order_create' %}" class="button">Checkout</a>
   </p>
+  {% endif %}
 {% endblock %}

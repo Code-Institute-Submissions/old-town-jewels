@@ -30,8 +30,9 @@
       </button>
 
       <p>Logged in as {{ user.username }}</p>
+      <div>
       <p class="logout pull-right"><a href="{% url 'logout' %}">Logout</a></p>
-
+    </div>
       <div class="collapse navbar-collapse" id="navbarNav">
       </div>
       {% else %}
