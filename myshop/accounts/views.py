@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
+from django.core.mail import send_mail
 
 
 def register(request):
@@ -24,6 +25,15 @@ def register(request):
                 username = username, password = password1, email = email,
                 last_name = last_name, first_name = first_name)
                 user.save()
+
+                #Send email to the registered user
+                subject = "Welcome to Old Town Jewels!"
+                message = "Thank you for registering with Us. We're glad to have you on board!"
+                from_email = "admin@oldtownjewels.com"
+                recipient_list = [email]
+                send_mail(subject, message, from_email, recipient_list)
+                print(send_mail)
+
                 messages.add_message(request, messages.SUCCESS, "User created successfully")
         else:
             messages.add_message(request, messages.ERROR, "Password not matching")
