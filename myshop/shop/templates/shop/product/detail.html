@@ -6,6 +6,7 @@
 
 
 {% block content %}
+{% if user.is_authenticated %}
   <div class="product-detail">
     <img src="{% if product.image %}{{ product.image.url }}{% else %}
     {% static 'images/no-img.png' %}{% endif %}">
@@ -23,4 +24,6 @@
     </form>
     {{ product.description|linebreaks }}
   </div>
+  {% endif %}
+
 {% endblock %}

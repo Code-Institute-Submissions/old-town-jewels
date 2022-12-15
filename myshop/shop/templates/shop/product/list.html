@@ -4,6 +4,7 @@
   {% if category %}{{ category.name }}{% else %}Products{% endif %}
 {% endblock %}
 {% block content %}
+{% if user.is_authenticated %}
   <div id="sidebar">
     <h3>Categories</h3>
     <ul>
@@ -31,5 +32,6 @@
         ${{ product.price }}
       </div>
     {% endfor %}
+    {% endif %}
   </div>
 {% endblock %}
