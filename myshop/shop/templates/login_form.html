@@ -1,5 +1,7 @@
 {% load static %}
+
 {% block content %}
+{% if not user.is_authenticated %}
 <form method="POST" action="{% url 'login' %}">
     {% csrf_token %}
     <label>Username:</label>
@@ -9,4 +11,5 @@
     <button type="submit">Login</button>
 </form>
 
+{% endif %}
 {% endblock %}

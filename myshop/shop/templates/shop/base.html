@@ -27,8 +27,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a href="accounts/register">Register</a>
+      
       <div class="log-in">
-      {% include 'login_form.html' %}"
+        {% if user.is_active %}
+          {% include 'login_form.html' %}
+          <p>Logged in as {{ user.username }}</p>
+        {% endif %}
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
       </div>
