@@ -13,6 +13,7 @@
         <th>Quantity</th>
         <th>Unit price</th>
         <th>Price</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -41,6 +42,7 @@
             </td>
             <td class="num">${{ item.price }}</td>
             <td class="num">${{ item.total_price }}</td>
+            <td></td>
           </tr>
         {% endwith %}
       {% endfor %}
@@ -49,6 +51,7 @@
         <td colspan="4"></td>
         <td class="num">${{ cart.get_total_price }}</td>
       </tr>
+      
     </tbody>
   </table>
   <p class="text-right">
