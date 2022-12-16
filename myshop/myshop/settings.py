@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+import django_heroku
 
 from pathlib import Path
 import os
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5nrrnox)%!uf*r(y2yyy_8xk8_)b=c5p$7(ku_g(y9!8m#ne5w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'myshop.urls'
@@ -129,7 +131,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "shop/static"),
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -155,3 +157,5 @@ STRIPE_SECRET_KEY = 'sk_test_51Jg7sVL3uZcnLwgfivUtGbwXDPLTw0eVKKRnfx8Xmg3R8mdii1
 STRIPE_API_VERSION = '2022-11-15'
 STRIPE_WEBHOOK_SECRET = 'whsec_24d68ec6cb5de0715c3c4fd62e868f55261bf9e73955dd6f39d0deeeabd586ab'
 
+# Heroku settings
+django_heroku.settings(locals())
