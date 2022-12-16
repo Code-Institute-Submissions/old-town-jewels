@@ -11,4 +11,3 @@ urlpatterns = [
         name='admin_order_pdf'),
 ]
 
-

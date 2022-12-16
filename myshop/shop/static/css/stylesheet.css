@@ -190,11 +190,15 @@ ul.errorlist {
 }
 
 .product-list .item {
-    width:25%;
-    padding:10px 20px 10px 0;
-    float:left;
-    text-align:center;
-    line-height:1.2;
+    width: 25%;
+    padding: 10px 20px 10px 0;
+    display: flex;
+    line-height: 1.2;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .product-list .item img {
