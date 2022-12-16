@@ -4,6 +4,10 @@ from django.contrib.admin.views.decorators import staff_member_required
 from .models import OrderItem, Order
 from .forms import OrderCreateForm
 from .tasks import order_created
+from django.conf import settings
+from django.http import HttpResponse
+from django.template.loader import render_to_string
+import weasyprint
 
 from cart.cart import Cart
 
@@ -41,10 +45,6 @@ def admin_order_detail(request, order_id):
                   {'order': order})
 
 
-from django.conf import settings
-from django.http import HttpResponse
-from django.template.loader import render_to_string
-import weasyprint
 @staff_member_required
 def admin_order_pdf(request, order_id):
     order = get_object_or_404(Order, id=order_id)
