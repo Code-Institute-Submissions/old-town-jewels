@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from django.conf import settings
 from orders.models import Order
+
 @shared_task
 def payment_completed(order_id):
     order = Order.objects.get(id=order_id)
