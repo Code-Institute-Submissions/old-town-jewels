@@ -25,9 +25,21 @@
       <a class="navbar-brand title" href="#">Old Town Jewels <i class="fas fa-gem me-3 text-secondary"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"> </span>
       </button>
     </div>
+    <div>
+    {% if user.is_authenticated %}
+          <p class="login-name">Logged in as {{ user.username }}</p>
+          <span>
+            <p><a class="logout pull-right" href="{% url 'logout' %}">Logout</a></p>
+          </span>
+         
+          {% else %}
+          <a href="{% url 'register' %}">Register</a>
+          <p><a href="{% url 'login' %}">Login</a></p>
+          {% endif %}
+        </div>
 </nav>
 
 <!-- Landing -->
@@ -76,21 +88,7 @@
         </div>
       </div>
       {% endif %}
-      {% if user.is_authenticated %}
-      <p>Logged in as {{ user.username }}</p>
-      <div>
-        <p class="logout pull-right"><a href="{% url 'logout' %}">Logout</a></p>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-      </div>
-      {% else %}
-      <a href="{% url 'register' %}">Register</a>
-      <p><a href="{% url 'login' %}">Login</a></p>
-      <!-- content that should be displayed to both logged-in and logged-out users goes here -->
-      {% endif %}
-    </div>
 
-  </nav>
   <!-------------- cart  ------------------->
   {% if user.is_authenticated %}
   <div class="cart">

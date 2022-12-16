@@ -357,3 +357,19 @@ form div.field {
     width: 200px;
     height: 200px;
 }
+p.login-name {
+    width: max-content;
+}
+.pull-right {
+    float: right;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: #4caf7fb8;
+    color: white;
+    text-decoration: none;
+  }
+ .pull-right:hover {
+    background-color: #3e8e41;
+  }
