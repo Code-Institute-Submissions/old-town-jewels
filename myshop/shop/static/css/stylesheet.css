@@ -152,9 +152,10 @@ ul.errorlist {
 
 
 #sidebar {
-    width:220px;
-    padding:30px 20px 0 0;
-    float:left;
+    width: 220px;
+    height: 3000px;
+    padding: 30px 20px 0 0;
+    float: left;
 }
 
 #sidebar ul{
@@ -182,12 +183,6 @@ ul.errorlist {
     color:#fff;
 }
 
-#main {
-    float:left;
-    width: 96%;
-    margin-right:-220px;
-    overflow:hidden;
-}
 
 .product-list .item {
     width: 25%;
@@ -359,6 +354,8 @@ form div.field {
 }
 p.login-name {
     width: max-content;
+    position: relative;
+    margin: 20px;
 }
 .pull-right {
     float: right;
