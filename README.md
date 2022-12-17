@@ -94,6 +94,31 @@ As a shopper at Old Town Jewels, I want to be able to:
 
 By being able to perform these tasks, I can easily shop and make purchases at Old Town Jewels.
 
+# Scope
+
+# User Story 1: Easily browse and search for products
+Customers can easily browse through the store's inventory and use search filters to find specific products.
+
+# User Story 2: View detailed product information
+Customers can view high-quality photos of the products and read detailed descriptions, including information on materials, sizing, and care instructions.
+
+# User Story 3: Add items to my cart and complete my purchase
+Customers can easily add items to their cart and complete their purchase securely through the website.
+
+# User Story 4: Apply coupons to my order
+Customers have the option to apply coupons to their orders at checkout by entering a coupon code.
+
+# Superuser
+
+# User Story 5: Add and manage products
+As the superuser of the store, I can easily add and manage products.
+
+# User Story 6: View and analyze sales data
+As the superuser of the store, I can view and analyze sales data, including total revenue and popular products.
+
+# User Story 7: Manage user accounts
+As the superuser of the store, I can manage user accounts, including adding, updating products. 
+
 
 
 
