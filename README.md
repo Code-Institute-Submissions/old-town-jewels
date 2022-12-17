@@ -70,17 +70,34 @@ By following these strategies, we hope to create a positive user experience for 
 # User Stories
 As the superuser of Old Town Jewels, I want to be able to:
 
-1. ** Add and manage products **: I want to be able to easily add new products to the store's inventory, as well as update and delete existing products.
+1. **Add and manage products**: I want to be able to easily add new products to the store's inventory, as well as update and delete existing products.
 
-2. View and analyze sales data: I want to be able to access detailed reports on sales data, including total revenue and popular products.
+2. **View and analyze sales data**: I want to be able to access detailed reports on sales data, including total revenue and popular products.
 
-Manage user accounts: I want to be able to add, update, and delete user accounts, including customer and employee accounts.
+3. **Manage user accounts**: I want to be able to add, update, and delete user accounts, including customer and employee accounts.
 
-Manage orders: I want to be able to view and manage orders, including marking orders as shipped and canceling orders if necessary.
+4. **Manage orders**: I want to be able to view and manage orders, including marking orders as shipped and canceling orders if necessary.
 
-Create and manage coupons: I want to be able to create and manage coupons, including setting expiration dates and usage limits, and track their usage.
+5. **Create and manage coupons**: I want to be able to create and manage coupons, including setting expiration dates and usage limits, and track their usage.
 
 By being able to perform these tasks, I can effectively manage and maintain the Old Town Jewels store.
+
+As a shopper at Old Town Jewels, I want to be able to:
+
+1. **Easily browse and search for products**: I want to be able to easily browse through the store's inventory and use section filters to find specific products.
+
+2. **View detailed product information**: I want to be able to see photos of the products and read detailed descriptions, including information on materials, sizing, and care instructions.
+
+3. **Add items to my cart and complete my purchase**: I want to be able to easily add items to my cart and complete my purchase securely through the website.
+
+4. **Apply coupons to my order**: I want to be able to enter a coupon code at checkout and have the discount applied to my order.
+
+By being able to perform these tasks, I can easily shop and make purchases at Old Town Jewels.
+
+
+
+
+
 
 
 
