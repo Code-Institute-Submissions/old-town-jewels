@@ -60,12 +60,32 @@ At Old Town Jewels, our goal is to provide an enjoyable and seamless shopping ex
 
 3. Secure checkout: We have implemented secure payment methods and encrypted data transmission to protect our customers' personal and financial information.
 
-By following these strategies, we hope to create a positive user experience for our customers and encourage them to shop with us again in the future.
-
 ## For Owner 
 1. Easy inventory management: We have provided tools for the owner to easily add, update, and delete products from the store's inventory.
 
 2. Detailed sales reports: The owner can access reports on sales data, including total revenue.
+
+By following these strategies, we hope to create a positive user experience for our customers and encourage them to shop with us again in the future.
+
+# User Stories
+As the superuser of Old Town Jewels, I want to be able to:
+
+1. * Add and manage products *: I want to be able to easily add new products to the store's inventory, as well as update and delete existing products.
+
+View and analyze sales data: I want to be able to access detailed reports on sales data, including total revenue and popular products.
+
+Manage user accounts: I want to be able to add, update, and delete user accounts, including customer and employee accounts.
+
+Manage orders: I want to be able to view and manage orders, including marking orders as shipped and canceling orders if necessary.
+
+Create and manage coupons: I want to be able to create and manage coupons, including setting expiration dates and usage limits, and track their usage.
+
+By being able to perform these tasks, I can effectively manage and maintain the Old Town Jewels store.
+
+
+
+
+
 
 
 
