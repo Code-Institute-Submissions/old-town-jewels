@@ -70,9 +70,9 @@ By following these strategies, we hope to create a positive user experience for 
 # User Stories
 As the superuser of Old Town Jewels, I want to be able to:
 
-1. * Add and manage products *: I want to be able to easily add new products to the store's inventory, as well as update and delete existing products.
+1. ** Add and manage products **: I want to be able to easily add new products to the store's inventory, as well as update and delete existing products.
 
-View and analyze sales data: I want to be able to access detailed reports on sales data, including total revenue and popular products.
+2. View and analyze sales data: I want to be able to access detailed reports on sales data, including total revenue and popular products.
 
 Manage user accounts: I want to be able to add, update, and delete user accounts, including customer and employee accounts.
 
