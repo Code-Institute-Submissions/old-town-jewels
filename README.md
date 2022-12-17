@@ -107,7 +107,7 @@ Customers can easily add items to their cart and complete their purchase securel
 
 # User Story 4: Apply coupons to my order
 Customers have the option to apply coupons to their orders at checkout by entering a coupon code.
-![Screenshot](old-town-jewels/myshop/static/images/checkout.png)
+![Screenshot](static/images/checkout.png)
 
 # Superuser
 
