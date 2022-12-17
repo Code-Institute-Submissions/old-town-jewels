@@ -117,13 +117,29 @@ As the superuser of the store, I can easily add and manage products.
 As the superuser of the store, I can view and analyze sales data, including total revenue and popular products.
 
 # User Story 7: Manage user accounts
-As the superuser of the store, I can manage user accounts, including adding, updating products. 
+As the superuser of the store, I can manage user accounts, including customer and employee accounts. 
+
+# User Story 8: View and analyze sales data
+As the superuser of the store, I can access detailed reports on sales data, including total revenue and popular products.
+
+# User Story 9: Manage user accounts
+As the superuser of the store, I can add, update, and delete user accounts, .
+
+# User Story 10: Manage orders
+As the superuser of the store, I can view and manage orders, including marking orders as shipped and canceling orders if necessary.
+
+# User Story 11: Create and manage coupons
+As the superuser of the store, I can create and manage coupons, including setting expiration dates and usage limits, and track their usage.
+
+By providing these features, Old Town Jewels aims to create a positive shopping experience for both customers and the store owner.
 
 
 # Structure
 
 This project is structured with a homepage with the website's logo and a message that greets the user with a clear navigation bar at the top of the page where the user can login or sign up. Old Town Jewels shop enables clients to browse products, add them to the cart, apply discount codes, go through the checkout process, pay with a credit card, and obtain an invoice.
-The website is made of the following apps:
+
+**The website is made of the following apps**:
+
 1. MyShop
 2. Accounts
 3. Cart
