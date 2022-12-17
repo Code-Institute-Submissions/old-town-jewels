@@ -120,6 +120,19 @@ As the superuser of the store, I can view and analyze sales data, including tota
 As the superuser of the store, I can manage user accounts, including adding, updating products. 
 
 
+# Structure
+
+This project is structured with a homepage with the website's logo and a message that greets the user with a clear navigation bar at the top of the page where the user can login or sign up. Old Town Jewels shop enables clients to browse products, add them to the cart, apply discount codes, go through the checkout process, pay with a credit card, and obtain an invoice.
+The website is made of the following apps:
+1. MyShop
+2. Accounts
+3. Cart
+4. Coupons
+5. Login
+6. Orders
+7. Payment
+8. Shop
+
 
 
 
