@@ -180,6 +180,24 @@ I checked the file paths for the images and made sure that the images were locat
 
     - Server issues: If the payment processed page is hosted on a server, there could be issues with the server itself that are preventing the page from being accessed. In this case, you may need to check with your hosting provider or server administrator to see if there are any issues that need to be addressed.
 
+# Acknowledgments
+
+I have done this project using the book "DJANGO 3 KROZ PRIMERE"
+I heavily relied on the book.
+
+
+# Project Status
+Unfortunately, I was not able to complete this project due to time constraints. I apologize for any inconvenience this may cause.
+# Project Challenges
+While working on this project, I encountered a number of challenges that made it difficult to complete. These challenges included:
+
+1. Time constraints: The project was very time-consuming and I was not able to dedicate as much time to it as I would have liked.
+2. Technical difficulties: I encountered several technical issues that made it difficult to implement certain features of the project.
+3. Lack of experience: As a beginner developer, I found some aspects of the project to be beyond my current skill level.
+
+
+Despite these challenges, I did my best to work through them and make progress on the project. However, in the end, I was not able to complete it as planned.
+
 
 
 
