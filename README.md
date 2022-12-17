@@ -50,9 +50,10 @@ Whether you're looking for a special piece of jewellery for yourself or a gift f
 
 # User experience
 
-At Old Town Jewels, our goal is to provide an enjoyable and seamless shopping experience for our customers. To achieve this, we have implemented the following strategies:
+At Old Town Jewels, our goal is to provide an enjoyable and seamless shopping experience for both our customers and the store owner. To achieve this, we have implemented the following strategies:
 
 # Strategy
+## For Customer
 1. Easy navigation: We have designed the store's layout and menu to be intuitive and easy to use, so customers can easily find  what they are looking for.
 
 2. Clear product descriptions: We have provided detailed descriptions of each product, including information on materials, sizing, and care instructions. This helps customers make informed purchasing decisions.
@@ -60,6 +61,12 @@ At Old Town Jewels, our goal is to provide an enjoyable and seamless shopping ex
 3. Secure checkout: We have implemented secure payment methods and encrypted data transmission to protect our customers' personal and financial information.
 
 By following these strategies, we hope to create a positive user experience for our customers and encourage them to shop with us again in the future.
+
+## For Owner 
+1. Easy inventory management: We have provided tools for the owner to easily add, update, and delete products from the store's inventory.
+
+2. Detailed sales reports: The owner can access reports on sales data, including total revenue.
+
 
 
 
