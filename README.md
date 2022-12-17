@@ -46,3 +46,12 @@ Whether you're looking for a special piece of jewellery for yourself or a gift f
 [Credit](#credit)
 
 [Acknowledgments](#Acknowledgments)
+
+
+# User experience
+
+At Old Town Jewels, our goal is to provide an enjoyable and seamless shopping experience for our customers. To achieve this, we have implemented the following strategies:
+
+    # strategy
+
+
