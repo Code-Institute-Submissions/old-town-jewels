@@ -107,7 +107,6 @@ Customers can easily add items to their cart and complete their purchase securel
 
 # User Story 4: Apply coupons to my order
 Customers have the option to apply coupons to their orders at checkout by entering a coupon code.
-![Screenshot](static/images/checkout.png)
 
 # Superuser
 
@@ -150,7 +149,36 @@ This project is structured with a homepage with the website's logo and a message
 7. Payment
 8. Shop
 
+# Unresolved Bugs
 
+1. **Deployment to Heroku failed**: 
+The project could not be deployed to Heroku due to an error with the database configuration.
+
+2. **Images not showing**: 
+Some images were not being displayed correctly on the website.
+
+3. **Payment processed page not accessible**: 
+The payment processed page was not accessible and returned a "server could not be reached" error.
+
+# What I have tried to resolve them
+
+To resolve the bugs identified in the project, the following actions were taken:
+
+1.  - Check the logs for Django application and web server for any error messages that might provide more information about the problem.
+    - Make sure that all dependencies and libraries required by your application are installed and up-to-date.
+    - Incorrect configuration: Check Heroku app's configuration to make sure it is set up correctly. Procfile and any environment variables that are required for your application to run.
+
+2. **Images not showing**: 
+I checked the file paths for the images and made sure that the images were located in the correct directory. I also checked the file permissions to make sure the images were readable by the web server.
+
+3. **Payment processed page not accessible** 
+    -  Incorrect URL: Made sure that the URL being used to access the payment processed page is correct. Double-check the spelling and formatting of the URL to ensure that it is correct.
+
+    - Network issues: If the payment processed page is being accessed from a different server or network, there could be network issues that are preventing the page from being reached. Checked with service provider to see if there are any issues that need to be addressed.
+
+    - Application errors: If the payment processed page is not working properly, there could be errors in the application that are preventing the page from being accessed. Reviewed the logs for my application and check for any error messages that might provide more information about the issue.
+
+    - Server issues: If the payment processed page is hosted on a server, there could be issues with the server itself that are preventing the page from being accessed. In this case, you may need to check with your hosting provider or server administrator to see if there are any issues that need to be addressed.
 
 
 
